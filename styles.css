@@ -1,0 +1,66 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .logo{
+      text-align: right;
+  }
+  .menu{
+      display: inline;
+  }
+  .menu h5{
+      padding:  20px 10px;
+      font-size: 26px;
+      color: #f1f1f1;
+      text-decoration: none;
+  }
+  .menu a.nostyle:link {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+      
+  }
+  #icon{
+      font-size: 25px;
+      padding: 5px;
+      color: #fff;
+  }
