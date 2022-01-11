@@ -3,31 +3,69 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
+<style>
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      padding-bottom: 3px;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    .box {
+      border: 2px solid black;
+      padding: 25px;
+      margin: 20px;
+    }
+    
+    .box div {
+      margin: 5px;
+    }
+    
+    .box p {
+      color: black;
+    }
+    
+    .controls {
+      display: flex;
+    }
+    
+    .horizontalspace {
+      flex-grow: 1;
+    }
+    
+    .stats {
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .buttons * {
+      margin-left: 5px;
+    }
+    
+    .stats *:not(svg) {
+      margin-right: 5px;
+    }
+    
+    ol {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+    }
+</style>
 <link rel="icon" href="logo.svg" sizes="any" type="image/svg+xml">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://gitlist.himdek.com/GitHubList.js"></script>
 </head>
 <body>
 <title>Ahmed Faarih : Web Developer</title>
 <div class="mainContent">
     <div class="container-fluid">
-        <div class="row"> 
-          <div class="col-md-12 myDetails">
-              <p>
-                  I'm Faarih. <br>
-                 I'm currently working as an IT Officer at the Employment Tribunal of the Maldives, while doing BIT at Cyryxx College. <br> But whenever I get a free time, I tend to dig in to Web Development or Web Designing.
-                  <br> This is my personal website to show my projects, studies, accomplishments and cool stuff I come across. <br>
-                  So . . .
-                  
-              </p>
-            </div>
-          </div>
-          <div class="row "> 
-            <div class="col-md-12 d-flex justify-content-center">
-              <img class="mygif" src="mr.gif"  alt="">
-            </div>
-          </div>
-       
+        <div id="pin"></div>
   </div>
 </div>
 
@@ -63,7 +101,11 @@
 </div>
 </div>
 
-<script src="script.js"></script>
+<script>
+    listrepos("faarih01", document.getElementById("pin")).then(reposcount => {
+  // In this section, variable reposcount stores the total number of Repositories.
+});
+</script>
 
 </body>
 </html>
