@@ -24,7 +24,7 @@ background-color: #FFFFFF;
 
 .nav{
   padding-top: 25px;
-  padding-right:150px ;
+  padding-right:140px ;
 }
 
 .hero-text{
@@ -62,13 +62,42 @@ background-color: #FFFFFF;
   height: 200px;
 }
 
+
+.blog a{
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #21243D;
+}
+
+.blog-texts h5{
+  font-family: 'Heebo', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #21243D;
+  font-weight: bold;
+}
+
+.blog-texts h6{
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #21243D;
+}
+
+.blog-texts p{
+  font-size: 16px; 
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+ 
 @media (min-width:320px)  { 
   .nav{
     padding-right: 0px;
-    
   }
 
-  .row{
+ .row{
     flex-direction: column-reverse;
   }
 
@@ -84,7 +113,7 @@ background-color: #FFFFFF;
 @media (min-width:481px)  { 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
   .nav{
-    padding-right: 150px;
+    padding-right: 140px;
   }
   .row{
     flex-direction: row;
